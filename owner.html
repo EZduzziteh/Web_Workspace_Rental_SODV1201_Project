@@ -12,41 +12,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Co-Worker Owner Work spaces and Properties </title>
-    <link rel="stylesheet" href="sodvtermproject.css">
+    <link rel="stylesheet" href="mytestcodes.css">
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" > </script>
-   
+   <script type ="text/javascript" src= "https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js" ></script>
 </head>
 <body>
-    <h1 id="title-window">  <img src="work center icon.jpg" height="100" width="100" >
+    <h1 id="title-window"> 
+         <img src="images/work center icon.jpg" height="100" width="100" >
         Co-op Work Space Office Center 
-      <img src="Project Icon.png" height=" 100" width="100">
+       <img src="images/Project Icon.png" height=" 100" width="100">
   </h1>
   <header > 
     <nav> 
-        <a href="index.html"> Home </a> 
-        <a href="workspace.html"> Work Space </a> 
-        <a href="owner.html"> Owner </a> 
-        <a href="site-map.html"> Site Map</a> 
+        <a href="UserStory7and8.html"> Home </a>   <!-- Temporary Home page during tests and designs -->
+        <a href="ownercoworker.html"> Owner Co-Worker Work Spaces and Properties </a> 
     </nav>
 </header>
     <div class="container">
 
        <div class="left_box"> 
-            <h2> Co-Worker Owner Work Spaces and Properties </h2>
+            <h2> Co-Worker Owner Work Spaces </h2>
+            <h2> Co-Worker Owner Properties </h2>
             <!-- Cite Google Images -->
-            <img src="Project Icon.png" alt="Term_Project" height="300" width="300">
+            <img src="images/Project Icon.png" alt="Term_Project" height="300" width="300">
        </div>
        <div class="right_box">
-           <!-- Cite: Bow Valley College -->
-           <img src="BVC Logo 2020.jpg" alt="BVC_logo" height="200" width="200">
-       
-        </div>
+        <!-- Cite: Bow Valley College -->
+          <img src="images/BVC Logo 2020.jpg" alt="BVC_logo" height="100" width="100">
+           <div class="LogIn_Container"> 
+               <form name="forms" id="formValidation" action="valid.html"> 
+                   <div class="input_fields" > 
+                     <input type="text" name="name" placeholder="Name" required >
+                   </div>
+                   <div class="input_fields" > 
+                     <input type="text" name="password" placeholder="Password" required >
+                   </div>
+                   <div class="text-center" > 
+                      <button type="submit" id="NextPage"> Click here to continue</button>
+                  </div>
+               </form>
+           </div>
+       </div>
     </div>
     
     <footer> 
         Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022.     
     </footer>
-    <script  src="sodv1201termproject.js">    </script>
-    <script src= "Filter.js" > </script>
+ 
+    <script> 
+    $(document).ready(function(){
+        
+
+        $("#forms").validate({
+      rules: {
+         username: {
+            minlength: 6
+        },
+         password: {
+             minlength: 6
+         },
+        },
+         messages: {
+             required: 'Please enter User Name here. ',
+             minlength: 'Required at least 6 valid characters. No spaces.',
+            username: 'This field is required',
+            passwords: 'This field is required',
+        },
+         submitHandler: function(form) {
+            form.submit();
+    $("button").html( "ownercoworker.html");
+       }
+
+      });
+     
+    });
+
+
+
+     
+
+
+    
+
+      
+      
+
+
+        
+
+          
+       /* 
+       var pattern = /^[a-zA-Z]*$/;
+        var username = $("#form_username").val()
+        if(pattern.text(username) && username !== "") {
+            $("##username_error_messag").hide();
+            $("#form_usrename").css("border-bottom", "3px solid red"); 
+        } else {
+            $("#username_error_message").html("Contain valid characters only");
+            $("#username_error_message").show();
+            $("#username_error_message").css("border-bottom", "3px solid red");
+            error_username =true;
+        }
+        */
+    
+    </script>
 </body>
 </html>

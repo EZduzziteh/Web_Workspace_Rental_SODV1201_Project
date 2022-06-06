@@ -12,8 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SODV 1201 Term Project - CoWorker Workspace </title>
-    <link rel="stylesheet"  href="sodvtermproject.css" >
-   
+    <link rel="stylesheet"  href="mytestcodes.css" >
     <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" >
     </script>
 </head>
@@ -22,31 +21,63 @@
          If not, they will be redirect to the main website under Owner Co Worker. Site map page will be the only 
          web page all osers can view globally but not edit --> 
 
-    <h1 id="title-window">  <img src="work center icon.jpg" height="100" width="100" >
+    <h1 id="title-window"> 
+      <img src="images/work center icon.jpg" height="100" width="100" >
         Co-op Work Space Office Center 
-      <img src="Project Icon.png" height=" 100" width="100">
-  </h1>
-  <header > 
-    <nav> 
-        <a href="owner.html"> Home </a> 
-        <a href="coworkerworkspaces.html"> Co-Worker Work Space and Properties</a> 
-        <a href="site-map.html">  Site Map</a> 
+      <img src="images/Project Icon.png" height=" 100" width="100">
+    </h1>
+  <header> 
+     <nav> 
+        <a href="UserStory7and8.html"> Home </a>   <!-- Temporary Home page during tests and designs -->
+
     </nav>
 </header>
-<div class="container">
-    <!-- Owner CoWorker allow access for the following  Array Object methods: 
-         Edit. Update(Modify). Sort, Shift. Unshift. Add. Delete.     -->
-    <form>
+    <div class="container">
+          <!-- Owner CoWorker allow access for the following  Array Object methods: 
+               Edit. Update(Modify). Sort, Shift. Unshift. Add. Delete.     -->
+         <div class="left_box"> 
+            <h2> Owner Co-Worker Work Spaces  List </h2>
+            <div id="OwnerWorkSpacesTable"> 
+                <table> 
+                    <thead>
+                        <tr><th>Header Item 1</th><th>Header Item 2</th></tr>
+                    </thead>
+                    <tfoot>
+                        <tr><th>Footer Item 1</th><th>Footer Item 2</th></tr>
+                    </tfoot>
+                    <tbody style="overflow-y: scroll; overflow-x: hidden; height: 100px;">
+                        <tr><td>Item 1-1</td><td>Item 2-1</td></tr>
+                        ...
+                        <tr><td>Item 1-N</td><td>Item 2-N</td></tr>
+                    </tbody>
 
-    </form>
-    
+                </table>
+            </div>
+       </div>
+       <div class="right_box">
+            <h2> Owner Co-Worker Properties List </h2>
+            <div id="OwnerPropertiesTable"> 
+                <table> 
+                    <thead>
+                        <tr><th>Header Item 1</th><th>Header Item 2</th></tr>
+                    </thead>
+                    <tfoot>
+                        <tr><th>Footer Item 1</th><th>Footer Item 2</th></tr>
+                    </tfoot>
+                    <tbody style="overflow-y: scroll; overflow-x: hidden; height: 100px;">
+                        <tr><td>Item 1-1</td><td>Item 2-1</td></tr>
+                        ...
+                        <tr><td>Item 1-N</td><td>Item 2-N</td></tr>
+                    </tbody>
 
-</div>
+                </table>
+            </div>
+        </div>
+    </div>
 <footer> 
     Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022. 
  </footer>
-<script src = "sodv1201termproject.js"> </script>
-<script src="index.js"></script>
-<script src="index2.js"> </script>
+<script src = "mytestcodes.js"> </script>
+
 </body>
 </html>
