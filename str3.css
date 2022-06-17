@@ -1,0 +1,11 @@
+table,th,td {
+border:4 px solid black;
+border-radius: 3px;
+}
+th,td{
+    background-color: bisque;
+
+}
+table{
+  text-align: center;
+}
