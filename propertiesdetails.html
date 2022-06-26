@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+   <!-- SODV 1201 Introduction to Web Programming
+         SODV 1201 Term Project- Co-Worker Office Space
+          Program designed and coded by: SODV 1201 Group 2: Sasha Greene,  Gurleen Kaur, Paul K Kho, Evan Maclean
+          Instructor:                   Dima Marachi
+          Due       :     Phase 1   : June 2 2022
+                          Phase 2   : June 30 2022
+    -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SODV 1201 Term Project - CoWorker Workspace </title>
+    <link rel="stylesheet"  href= "sodv1201termproject.css" >
+    <!-- Load JQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="title-window">  <img src="images/work center icon.jpg" height="100" width="100" >
+        Owner Co-Worker Workspace and Properties Registry
+      <img src="images/Project Icon.png" height=" 100" width="100">
+  </h1>
+  <header >
+    <nav>
+        <a class="isActive" href="OwnerFiles\ownerlogin.html"> Home </a>
+        <a href="CoWorkerFiles\propertiesdetails.html">  Co-Worker Work Space and Properties</a>
+        <a href="OwnerFiles\propertiesdetails.html"> Owner Co-Worker Work Space and Properties  </a>
+        <a href="contactinformation.html" > Contact Details </a>
+        <a href="site-map.html">  Site Map</a>
+    </nav>
+</header>
+<div class="container">
+    <!--  Owner/Co-Worker Work Space and Properties web page.     -->
+          <h1> Owner Co-Worker Work Spaces and Properties Details </h1>
+        <form>
+            <div class="left_box">
+                <h2> Work Space Listing </h2>
+         <div id= "custombox"> </div>
+           </div>
+           <div class="right_box">
+                <h2> Properties Listing </h2>
+            <div id= "custombox"> </div>
+            </div>
+            <div class="display_results">
+                <p id="p1"> </p>
+                <p id="p2"> </p>
+            </div>
+        </form>
+        <div class="editfunctions">
+            <button>   Append  </button>
+            <button>   Delete  </button>
+            <button>   Update  </button>
+            <button>   Sort  </button>
+            <button>   Save  </button>
+            <button> Search </button>
+         </div>
+</div>
+<footer>
+    Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022.
+</footer>
+<script>
+$(document).ready(function() {
+
+})
+</script>
+<script src = "sodv1201termproject.js"> </script>
+<script src = "g2index.js"> </script>
+</body>
+</html>

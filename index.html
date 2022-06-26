@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-   <!-- SODV 1201 Introduction to Web Programming 
-         SODV 1201 Term Project- Co-Worker Office Space 
+   <!-- SODV 1201 Introduction to Web Programming
+         SODV 1201 Term Project- Co-Worker Office Space
           Program designed and coded by: SODV 1201 Group 2: Sasha Greene,  Gurleen Kaur, Paul K Kho, Evan Maclean
           Instructor:                   Dima Marachi
           Due       :     Phase 1   : June 2 2022
-                          Phase 2   : June 24 2022 
+                          Phase 2   : June 30 2022
     -->
 <html lang="en">
 <head>
@@ -12,35 +12,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SODV 1201 Term Project - CoWorker Workspace </title>
-    <link rel="stylesheet"  href="sodvtermproject.css" >
-  
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" >
-    </script>
+    <link rel="stylesheet"  href="sodv1201termproject.css" >
+ <!-- Load JQuery Library -->
+ <script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+ crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>
 </head>
 <body>
     <h1 id="title-window">  <img src="images/work center icon.jpg" height="100" width="100" >
-        Owner Co-Worker Work Spaces and Properties 
+        Owner Co-Worker Workspace and Properties Registry
       <img src="images/Project Icon.png" height=" 100" width="100">
   </h1>
-  <header > 
-    <nav> 
-        <a href="index.html"> Home </a> 
-        <a href="workspace.html"> Co-Worker Work Space </a> 
-        <a href="owner.html"> Owner Co-Worker </a> 
-        <a href="site-map.html">  Site Map</a> 
+  <header >
+    <nav>
+        <a class ="isActive" href="#index.html"> Home </a>
+        <a href= coworkerlogin.html>  Co-Worker Sign In</a>
+        <a href="ownerlogin.html"> Owner Co-Worker Sign In  </a>
+        <a href="contactinformation.html" > Contact Details </a>
+        <a href="site-map.html">  Site Map</a>
     </nav>
 </header>
 <div class="container">
-    <!-- Home page (Landing Page)  Upon successful registration, the user will can access Co-Worker Work Space and Properties 
-        web page or Owner/Co-Worker Work Space and Properties web page.     -->
-      <div class="website_signIn"> 
-          
+    <!-- Home page (Landing Page)  Upon successful registration, the user will can
+         access Co-Worker Work Space and Properties web page or Owner/Co-Worker
+         Work Space and Properties web page.     -->
+          <h1> Sign Up Registration Form </h1>
+      <div class="RegistrationForm">
+          <form>
+            <label > Full Name:*</label>
+               <input type="text" id="username" name="name" required>
+            <label> eMail Address:* </label>
+               <input type = "text" id="email" name="email" required>
+            <label> Mobile Phone:* </label>
+               <input type = "text"  id="mobilephone" name="mphone" required>
+            <div class="role" id="btnChoice" >
+               <label> <input type="radio" id ="coworker" >  Co-Worker </label>
+               <label> <input type="radio" id ="owner">  Owner Co-Worker  </label>
+               <button type="submit"  id="btnPass" > Sign In </button>
+               <br>
+            </div>
       </div>
-</div>
-<footer> 
-    Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022.     
-</footer>
-<script src = "sodv1201termproject.js"> </script>
+           </form>
 
+
+</div>
+<footer>
+    Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022.
+</footer>
+<script src="sodv1201termproject.js">  </script>
 </body>
 </html>

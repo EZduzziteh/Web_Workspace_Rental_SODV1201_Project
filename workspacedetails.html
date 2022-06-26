@@ -24,20 +24,37 @@
   </h1>
   <header >
     <nav>
-        <a href="index.html"> Home </a>
-        <a href="coworkerlogin.html">  Co-Worker Sign In</a>
-        <a href="ownerlogin.html"> Owner Co-Worker Sign In  </a>
+        <a href="coworkerlogin.html"> Home </a>
+        <a class="isActive" href="workspacedetails.html"> Co-Worker Work Space and Properties</a>
         <a href="contactinformation.html" > Contact Details </a>
-        <a class="isActive" href="#site-map.html">  Site Map</a>
+        <a href="site-map.html">  Site Map</a>
     </nav>
 </header>
 <div class="container">
-    <!-- Interactive buttons  -->
-          <h1> Site Map</h1>
-        <div class="siteMapDetails">
-           <img src= "images/SODV 1201 Term Project Site Map .png " alt="Site Map Details" width="1200"  height="400" >
-        </div>
-
+    <!-- User will can access Co-Worker Work Space and Properties web page or Owner/Co-Worker
+         Work Space and Properties web page.     -->
+          <h1> Co-Worker Properties and Work Space Details</h1>
+         <form>
+            <div class="left_box">
+                <h2> Properties Listing </h2>
+              <div id="custombox"> </div>
+           </div>
+           <div class="right_box">
+                <h2> Work Spaces Listing </h2>
+              <div id="custombox"> </div>
+            </div>
+            <div class="display_results">
+                <p id="p1"> </p>
+                <p id="p2"> </p>
+            </div>
+          </form>
+          <div class="editfunctions">
+            <button> Append  </button>
+            <button> Delete  </button>
+            <button> Update  </button>
+            <button> Save  </button>
+            <button> Search </button>
+         </div>
 </div>
 <footer>
     Project prepared and programmed by SODV 1201 Group 2. All rights reserved. &#169 2022.

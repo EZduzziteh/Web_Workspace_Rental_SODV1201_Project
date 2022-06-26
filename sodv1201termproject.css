@@ -1,0 +1,180 @@
+/* SODV 1201 Introduction to Web Programming
+SODV 1201 Term Project- Co-Worker Office Space
+ Program designed and coded by: SODV 1201 Group 2: Sasha Greene,  Gurleen Kaur, Paul K Kho, Evan Maclean
+ Instructor:                   Dima Marachi
+ Due       :     Phase 1   : June 2 2022
+                 Phase 2   : June 30 2022
+*/
+
+/* Style sheet from Home page (Page 1) to Page 10)  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #efbe58;
+
+}
+
+body {
+  font-size: 16px;
+  font-family: system-ui;
+  background: -webkit-radial-gradient(top left, #90F6FB, #2C3283);
+    background-color: #90a9cf
+}
+
+header {
+    background: #bbb6b6;
+    background-size: center;
+    background-position: center;
+    height: 75px;
+}
+
+nav {
+    position:  relative;
+    text-align: center;
+    font-size: 24px;
+    height: 20px;
+    width: 100%;
+}
+
+a:link {
+  color: green;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(62, 42, 240);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(236, 240, 36);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(21, 128, 17);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.isActive {
+  color: rgb(86, 238, 81);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.container {
+    border:#6c25dd;
+    background: #d39650;
+    height: 575px;
+    width: auto;
+}
+
+.left_box {
+    float: left;
+    background: #5691ac;
+    padding: 5px #5d9736;
+    height: 500px;
+    width:  50%;
+}
+
+.right_box {
+    float: right;
+    background: #5691ac;
+    text-align: center;
+    padding: 5px #5d9736;
+    height: 500px;
+    width:  50%;
+}
+
+#fillForm {
+  text-align: center;
+}
+
+.RegistrationForm {
+  width: 400px;
+  padding: 15px 40px 40px;
+  border: 10px solid #ccc;
+  border: 5px;
+  background-color: white;
+  margin: 5% auto;
+}
+
+.editfunctions {
+  text-align: center;
+}
+
+#custombox {
+   margin: 20px;
+    width: 600px;
+    height: 375px;
+    background: rgb(219, 224, 224);
+    overflow: scroll;
+}
+
+.siteMapDetails {
+  height: 400px;
+  width: 1000px;
+  margin-left: 20px;
+  background:rgb(191, 199, 199);
+  overflow: scroll;
+}
+
+.contactdetails {
+  height: 450px;
+  width: 900px;
+  margin-left: 200px;
+  background:rgb(191, 199, 199);
+  overflow: scroll;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom:5px;
+
+}
+
+input[type=submit] {
+  background-color: #9b77c4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #2678c5;
+}
+
+footer {
+   color: #ffffff;
+    text-align: center;
+}
