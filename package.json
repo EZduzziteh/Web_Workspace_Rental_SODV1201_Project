@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- 
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
   "author": "SODV 1201 Term Project Group 2",
   "license": "ISC",
-  "type": "module"
-
+  "type" : "module",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
-
